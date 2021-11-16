@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CoolProj</string>
+    <string name="hint_input_item">type your item</string>
+    <string name="hint_res">Results</string>
+    <string name="btn_text">Send</string>
+
+    <string name="hint_input_Local">Digite seu item</string>
+    <string name="hint_input_x">x0.0</string>
+    <string name="hint_input_y">y0.0</string>
+</resources>

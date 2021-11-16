@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/neon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imB"
+            android:layout_width="match_parent"
+            android:layout_height="645dp"
+            android:baselineAlignBottom="false"
+            android:clickable="false"
+            app:srcCompat="@drawable/neon" />
+
+        <Switch
+            android:id="@+id/swOcultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Ocultar imagem"
+            android:textOff="oculto"
+            android:textOn="exibindo"
+            android:textSize="14sp"
+            tools:checked="false" />
+
+        <ToggleButton
+            android:id="@+id/tbHabilitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textOff="Desabilitados"
+            android:textOn="Habilitados" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_input_item" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cores"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/llcores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <CheckBox
+                android:id="@+id/cbBranco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branco" />
+
+            <CheckBox
+                android:id="@+id/cbPreto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preto" />
+
+            <CheckBox
+                android:id="@+id/cbVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tam P" />
+
+            <RadioButton
+                android:id="@+id/rbM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tam M" />
+
+            <RadioButton
+                android:id="@+id/rbG"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Tam G" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="enviar"
+                android:text="@string/btn_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_res"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtvEscolhaCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valores Escolhidos"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtvRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tamanho Desejado"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
+

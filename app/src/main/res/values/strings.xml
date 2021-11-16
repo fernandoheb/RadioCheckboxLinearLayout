@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Certamente não é Português</string>
+    <string name="hint_input_item">Digite item</string>
+    <string name="hint_res">Resultado</string>
+    <string name="btn_text">Enviar</string>
+    <string name="hint_input_Local">Digite seu item</string>
+    <string name="hint_input_x">x0.0</string>
+    <string name="hint_input_y">y0.0</string>
+</resources>

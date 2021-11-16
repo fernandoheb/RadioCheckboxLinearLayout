@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">هذا رائع </string>
+    <string name="hint_input_item">اكتب البند الخاص بك</string>
+    <string name="hint_res">نتائج</string>
+    <string name="btn_text">إرسال</string>
+
+    <string name="hint_input_Local">Digite seu item</string>
+    <string name="hint_input_x">x0.0</string>
+    <string name="hint_input_y">y0.0</string>
+</resources>
